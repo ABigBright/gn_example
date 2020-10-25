@@ -38,4 +38,9 @@ set_defaults("source_set") {
   configs = _shared_binary_target_configs
 }
 
-set_default_toolchain("//build/toolchain:gcc")
+if (target_os == "linux" && target_cpu == "arm") {
+    set_default_toolchain("//build/toolchain:armgcc")
+} else {
+    set_default_toolchain("//build/toolchain:gcc")
+}
+
