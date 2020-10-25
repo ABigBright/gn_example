@@ -1,3 +1,11 @@
+# GN Learn
+
+Clone from google official site for learn GN meta-build system
+
+> /examples/simple_build is a modified build for cross build for arm linux system
+
+---
+
 # GN
 
 GN is a meta-build system that generates build files for
